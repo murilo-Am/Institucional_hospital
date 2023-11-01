@@ -6,17 +6,25 @@
 .td {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 15fr;
+    grid-template-rows: 1fr 5fr;
     width: auto;
     height: auto;
 }
+body { overflow-x: hidden; }
+
+
+
 .fn {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 1;
-    background-color: aquamarine;
+    background-color: rgb(208, 208, 208);
+    width: 110%;
+    height: 40%;
+    margin-top: 2%;
 }
+
 a {
     color: black;
     text-decoration: none;
@@ -49,7 +57,20 @@ a {
     margin-left: 40%;
     width: 100%;
     height: 100%;
+    
 }
+
+#quem::after {  /*Peseudoclasse after no CSS são usados para inserir conteúdo antes ou depois de um elemento selecionado*/
+    content: "";
+    position: absolute;
+    top: 8.5%;  
+    bottom: 0;  
+    right: 60%;
+    width: 4px;
+    height: 5%;
+    background-color: rgb(212, 212, 37);
+}
+
 #consultas {
     grid-column-start: 4;
     grid-column-end: 4;
@@ -60,6 +81,16 @@ a {
     margin-left: 60%;
     width: 100%;
     height: 100%;
+}
+#consultas::after {
+    content: "";
+    position: absolute;
+    top: 8.5%;  
+    bottom: 0;  
+    right: 35%;
+    width: 4px;
+    height: 5%;
+    background-color: rgb(215, 215, 20);
 }
 #lin {
     grid-column-start: 5;
@@ -72,10 +103,22 @@ a {
     font-family:'Montserrat';
     font-size: 115%;
 }
+#lin::after {
+    content: "";
+    position: absolute;
+    top: 8.5%;  
+    bottom: 0;  
+    right: 13%;
+    width: 4px;
+    height: 5%;
+    background-color: rgb(215, 215, 20);
+}
 #lin ul {
     list-style-type: none;  /* Remove os marcadores de lista */
     margin: 0;  /* Remove as margens */
     padding: 0;  /* Remove o preenchimento */
+    background-color: rgb(208, 208, 208);
+   
 }
 
 #lin ul li {
@@ -107,4 +150,9 @@ a {
     width: 10%;
     height: 10%;
     background-color: azure;
+}
+#banner {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
 }
