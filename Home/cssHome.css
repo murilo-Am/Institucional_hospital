@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+.td {
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr 5fr 1fr;
+    grid-template-rows: 1fr 15fr;
+    width: 1080px;
+    height: 920px;
+}
+
+#logo {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+   
+}
+#ins {
+    font-family:'Montserrat';
+}
