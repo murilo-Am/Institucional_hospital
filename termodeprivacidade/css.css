@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0.5%;
+}
+
+
+.td {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr ;
+    width: auto;
+    height: auto;
+}
+body { 
+
+    overflow-x: hidden;
+}
+
+
+
+
+.fn {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(208, 208, 208);
+    width: 110%;
+    height: 40%;
+    margin-top: 2%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#logo {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+   
+}
+#ins {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    font-family:'Montserrat';
+    font-size: 120%;
+    margin-top: 18%;
+    margin-left: 20%;
+    width: 100%;
+    height: 100%;
+}
+#quem {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    font-family:'Montserrat';
+    font-size: 115%;
+    margin-top: 18%;
+    margin-left: 40%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#quem::after {  /*Peseudoclasse after no CSS são usados para inserir conteúdo antes ou depois de um elemento selecionado*/
+    content: "";
+    position: absolute;
+    top: 8.5%;  
+    bottom: 0;  
+    right: 60%;
+    width: 4px;
+    height: 5%;
+    background-color: rgb(212, 212, 37);
+}
+
+#consultas {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    font-family:'Montserrat';
+    font-size: 115%;
+    margin-top: 18%;
+    margin-left: 60%;
+    width: 100%;
+    height: 100%;
+}
+#consultas::after {
+    content: "";
+    position: absolute;
+    top: 8.5%;  
+    bottom: 0;  
+    right: 35%;
+    width: 4px;
+    height: 5%;
+    background-color: rgb(215, 215, 20);
+}
+#lin {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+    margin-left: 50%;
+    font-family:'Montserrat';
+    font-size: 115%;
+}
+#lin::after {
+    content: "";
+    position: absolute;
+    top: 8.5%;  
+    bottom: 0;  
+    right: 13%;
+    width: 4px;
+    height: 5%;
+    background-color: rgb(215, 215, 20);
+}
+#lin ul {
+    list-style-type: none;  /* Remove os marcadores de lista */
+    margin: 0;  /* Remove as margens */
+    padding: 0;  /* Remove o preenchimento */
+    background-color: rgb(208, 208, 208);
+   
+}
+
+#lin ul li {
+    display: inline-block;  /* Exibe os itens da lista na mesma linha */
+}
+
+#lin ul li a {
+    display: block;  /* Faz com que o link ocupe todo o espaço do item da lista, tornando toda a área clicável */
+    padding: 0.5em;  /* Adiciona um pouco de espaço ao redor do link */
+    text-decoration: none;  /* Remove o sublinhado do link */
+}
+
+#lin ul li ul {
+    display: none;  /* Esconde o submenu por padrão */  /* Posiciona o submenu em relação ao item de menu pai */
+    z-index: 1;
+}
+
+#lin ul li:hover ul {
+    display: block;  /* Mostra o submenu quando o mouse passa sobre o item de menu */
+    position: absolute;
+}
+
+#lin img {
+    padding: 20%;  /* Adiciona um preenchimento ao redor das imagens */
+}
+#fundo {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    width: 10%;
+    height: 10%;
+    background-color: azure;
+}
+
+/*MEIO*/
+#termos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+   
+}
+#fnd {
+    background: linear-gradient(0deg, rgba(51, 197, 244, 0.72) 0%, rgba(51, 197, 244, 0.00) 100%);
+    margin-left: 0.7%;
+}
+#tit {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family:'Montserrat';
+    font-size: 205%;
+    margin-top: 18%;
+    margin-left: 35%;
+    width: 100%;
+    height: 100%;
+}
+#txt {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family:'Montserrat';
+    font-size: 105%;
+    margin-left: 20%;
+    width: 60%;
+    height: 100%;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Rodapé*/
+
+.roda {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 0.3fr;
+    width: auto;
+    height: auto;
+}
+#fndd2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40%;
+    margin: 0%;
+    margin-left: 0.5%;
+    background: rgba(185, 185, 186, 0.38)
+}
+#rede {
+    margin-left: 9%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 10%;
+}
+#end {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: 'Montserrat';
+    font-size: 95%;
+    width: 10%;
+    height: 10%;
+    white-space: nowrap;
+    place-items: center;
+    margin-left: 10%;
+}
+#negro {
+    font-weight: bold;
+
+}
+#dvd {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: 'Montserrat';
+    font-size: 95%;
+    width: 10%;
+    height: 10%;
+    white-space: nowrap;
+    place-items: center;
+    margin-left: 10%;
+}
+#tel {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: 'Montserrat';
+    font-size: 95%;
+    width: 10%;
+    height: 10%;
+    white-space: nowrap;
+    place-items: center;
+    margin-left: 10%;
+}
+#priv {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-family: 'Montserrat';
+    font-size: 95%;
+    width: 10%;
+    height: 10%;
+    white-space: nowrap;
+    place-items: center;
+    margin-left: 10%;
+}
+#con {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-family: 'Montserrat';
+    font-size: 95%;
+    width: 10%;
+    height: 10%;
+    white-space: nowrap;
+    place-items: center;
+    margin-left: 10%;
+}
+#agn {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-family: 'Montserrat';
+    font-size: 95%;
+    width: 10%;
+    height: 10%;
+    white-space: nowrap;
+    place-items: center;
+    margin-left: 10%;
+}
+#ans {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+#ans img {
+    margin-left: 15%;
+    margin-top: 10%;
+}
+#infor {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+}
+#infor img {
+    margin-left: 25%;
+    margin-top: 12%;
+}
