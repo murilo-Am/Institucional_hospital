@@ -3,6 +3,35 @@
     margin: 0.5%;
 }
 
+@media screen and (max-width: 1092px) {
+
+   #compra {
+    height: 50%;
+    font-size: 80%;
+   }
+
+   #txtxt {
+    font-size: 80%;
+    margin-top: 15%;
+   }
+   #a1{
+    font-size: 40%;
+    white-space: nowrap;
+    margin-left: 5%;
+   }
+   #alpha p {
+    margin-left: -250%;
+   }
+   #txt p {
+    margin-left: -10%;
+   }
+
+   ::after {
+    opacity: 0;
+   }
+
+   
+}
 
 .td {
     display: grid;
@@ -361,32 +390,7 @@ a {
     height: 100%;
     text-align: center;
 }
-#botao {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    width: 50%;
-    height: 40%;
-    border-radius: 50px;
-    background: #3F74C3;
-    margin: 50%;
-    margin-left: -25%;
-    margin-top: -30%;
-    border: 3px solid rgb(22, 18, 55);
-}
-#botao a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0%;
-    margin-left:0%;
-    margin-top: 05%;
-    font-family: 'Montserrat';
-    font-size: 155%;
-    height: 50%;
-    white-space: nowrap;
-}
+
 #img12 {
     grid-column-start:3;
     grid-column-end: 4;
